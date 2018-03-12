@@ -22,8 +22,8 @@ public class ProductBiz implements Biz<Product, Integer> {
 	
 	@Transactional
 	@Override
-	public void register(Product t) {
-		dao.insert(t);
+	public void register(Product p) {
+		dao.insert(p);
 	}
 
 	@Transactional
@@ -34,8 +34,8 @@ public class ProductBiz implements Biz<Product, Integer> {
 
 	@Transactional
 	@Override
-	public void modify(Product t) {
-		dao.update(t);
+	public void modify(Product p) {
+		dao.update(p);
 	}
 
 	@Transactional
