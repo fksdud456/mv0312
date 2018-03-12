@@ -20,14 +20,13 @@
 <tbody>
 <c:forEach var="u" items="${userlist }">
 	<tr>
-		<td>${u.id }</td>
+		<td><a href = "userdetail.do?id=${u.id }">${u.id }</a></td>
 		<td>${u.pwd }</td>
 		<td>${u.name }</td>
 	</tr>
 </c:forEach>
 </tbody>
 </table>
-
 </div>
 
 
