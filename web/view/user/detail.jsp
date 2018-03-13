@@ -41,8 +41,7 @@ $(document).ready(function(){
 <h1>Detail Page</h1>
 
 <form id="user_detail">
-ID : ${user.id } <br>
-<input type = "hidden" name="id" id="id" value =${user.id }>
+ID<input type = "text" name="id" id="id" value =${user.id } readonly><br>
 PWD<input type="text" name="pwd" id="pwd" value = ${user.pwd }><br>
 NAME<input type="text" name="name" id="name" value = ${user.name }><br>
 <input type="button" value="UPDATE" id="u_bt">

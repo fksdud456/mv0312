@@ -49,8 +49,7 @@ $(document).ready(function(){
 <h1>Detail Page</h1>
 	<form id="product_detail">
 		<input type="hidden" name="imgname" value=${product.imgname }>
-		<input type="hidden" name="id" id="id" value=${product.id }>
-		ID : ${product.id } <br> 
+		ID :<input type="text" name="id" id="id" value=${product.id } readonly><br> 
 		NAME<input type="text" name="name" id="name" value=${product.name }><br> 
 		PRICE<input type="text" name="price" id="price" value=${product.price }><br>
 		DATE : ${product.regdate }<br> 
