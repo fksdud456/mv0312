@@ -29,6 +29,7 @@ public class ProductController {
 		m.addAttribute("center", "product/list");
 		return "main";
 	}
+	
 	@RequestMapping("/productadd.do")
 	public String add(Model m) {
 		System.out.println("productadd" + m);
@@ -36,6 +37,7 @@ public class ProductController {
 		m.addAttribute("center", "product/add");
 		return "main";
 	}
+	
 	@RequestMapping("/productaddimpl.do")
 	public String addimpl(Model m,Product p) {
 		System.out.println("productaddimpl" + p);
@@ -65,10 +67,10 @@ public class ProductController {
 	@RequestMapping("/productupdate.do")
 	public String update(Model m, Product p) {
 		System.out.println("productupdate" + m);
-		
+
 		MultipartFile mf = p.getMf();
-		String imgName = mf.getOriginalFilename();
-		if (!imgName.isEmpty()) {
+		if (!mf.isEmpty()) {
+			String imgName = mf.getOriginalFilename();
 			p.setImgname(imgName);
 			updateImage(mf, imgName);
 		}
