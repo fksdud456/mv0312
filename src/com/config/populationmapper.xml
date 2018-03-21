@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hw.mapper.PopulationMapper">
+
+	<resultMap type="population" id="populationResult">
+		<result column="gu" property="gu"/>
+		<result column="dong" property="dong"/>
+		<result column="one" property="one"/>
+		<result column="two" property="two"/>
+		<result column="three" property="three"/>
+		<result column="four" property="four"/>
+		<result column="five" property="five"/>
+		<result column="six" property="six"/>
+		<result column="sevenover" property="sevenover"/>
+	</resultMap>
+	
+	<select id="select" parameterType="String" 
+	resultMap="populationResult">
+		SELECT * FROM population WHERE one > 7000 
+	</select>
+	<select id="selectall" resultType="Population">
+		SELECT dong, one FROM population WHERE one > 7000 AND dong != '소계' 
+	</select>
+</mapper>
+
+
+
+
+
+

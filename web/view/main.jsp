@@ -11,7 +11,10 @@ uri="http://www.springframework.org/tags"%>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/variable-pie.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <style>
 /* Global CSS */
@@ -79,6 +82,15 @@ footer{
 	<li><a href="itemlist.do">Item List</a></li>
 	<li><a href="itemadd.do">Item Add</a></li>
 </ul>
+
+<h4><a href ="chart1.do">Chart1</a></h4>
+<h4><a href ="chart2.do">Chart2</a></h4>
+<!-- HiveData chart -->
+<h4><a href ="chart3.do">Chart3</a></h4>
+<!--  -->
+<h4><a href ="chart4.do">Chart4</a></h4>
+
+
 </header>
 <section>
 	<c:choose>
